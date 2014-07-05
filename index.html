@@ -8,6 +8,14 @@ title: 我的Blog
 　　<p>最新文章</p>
 	<a href="{{ site.baseurl }}/EndAdmin/index.html" target="_blank">End-Admin</a>
 
+	<ul>
+		{% for post in site.posts %}
+
+　　　　　　<li>post</li>
+
+　　　　{% endfor %}
+	</ul>
+
 　　<ul>
 
 　　　　{% for post in site.posts %}
