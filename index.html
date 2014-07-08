@@ -1,27 +1,97 @@
 ---
 layout: default
-title: 我的Blog
+title: EnoND Blog
 ---
+<nav class="navbar navbar-default" role="navigation" style="margin-bottom:0;">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">EnoND</a>
+		</div>
 
-　　<h2>{{ page.title }}</h2>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active">
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="projects.html">项目</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="mailto:enond@qq.com">联系我</a>
+				</li>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container-fluid -->
+</nav>
 
-　　<p>最新文章</p>
-	<a href="{{ site.baseurl }}/EndAdmin/index.html" target="_blank">End-Admin</a>
+<div class="jumbotron">
+	<div class="container">
+		<h1>EnoND Blog</h1>
+		<p>欢迎来到EnoND 博客小站</p>
+		<p>
+			<a class="btn btn-success" role="button" href="projects.html">查看现有项目</a>
+		</p>
+	</div>
+</div>
 
-	<ul>
-		{% for post in site.posts %}
+<div class="container">
+	<div class="row item">
+		<div class="col-sm-3 time">
+			<p>
+				<span class="time-txt">2014-07-08</span>
+			</p>
+		</div>
+		<div class="col-sm-9">
+			<div class="page-header">
+				<h1>
+					Example page header
+					<small>Subtext for header</small>
+				</h1>
+			</div>
+			<p>
+				Bootstrap 会自动帮你针对不同的屏幕尺寸调整你的页面，使其在各个尺寸的屏幕上表现良好。下面我们列出了如何禁用这一特性，就像这个非响应式布局实例页面一样。
+禁止响应式布局有如下几步：
 
-　　　　　　<li>post</li>
+    移除 此 CSS 文档中提到的设置浏览器视口（viewport）的标签：
+				<meta>
+				。
+    通过为 .container 类设置一个 width 值从而覆盖框架的默认 width 设置，例如 width: 970px !important; 。请确保这些设置全部放在默认的 Bootstrap CSS 文件的后面。注意，如果你把它放到媒体查询中，也可以略去 !important 。
+    如果使用了导航条，需要移除所有导航条的折叠和展开行为。
+    对于栅格布局，额外增加 .col-xs-* 类或替换掉 .col-md-* 和 .col-lg-*。 不要担心，针对超小屏幕设备的栅格系统能够在所有分辨率的环境下展开。
 
-　　　　{% endfor %}
-	</ul>
+针对 IE8 仍然需要额外引入 Respond.js 文件（由于仍然利用了浏览器对媒体查询（media query）的支持，因此还需要做处理）。这样就禁用了 Bootstrap 对移动设备的响应式支持。
+禁止响应式特性的 Bootstrap 模版
 
-　　<ul>
-
-　　　　{% for post in site.posts %}
-
-　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-
-　　　　{% endfor %}
-
-　　</ul>
+我们已经按照上面的步骤制作了一份案例。仔细阅读其源码并对照上面的步骤实践一下吧。
+			</p>
+		</div>
+	</div>
+	<div class="row item">
+		<div class="col-sm-3 time">
+			<p>
+				<span class="time-txt">2014-07-08</span>
+			</p>
+		</div>
+		<div class="col-sm-9">
+			<div class="page-header">
+				<h1>
+					Example page header
+					<small>Subtext for header</small>
+				</h1>
+			</div>
+			<p>asdfasdfasfd</p>
+		</div>
+	</div>
+</div>

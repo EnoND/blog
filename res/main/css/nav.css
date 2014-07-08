@@ -1,0 +1,35 @@
+#myNav .bs-docs-sidenav{
+	color: #ccc;
+}
+#myNav .bs-docs-sidenav a{
+	color: #999;
+	padding: 0px;
+}
+#myNav .bs-docs-sidenav ul{
+	display: none;
+}
+#myNav .bs-docs-sidenav li.active > a{
+	color: #438EB9;
+	border-left: 1px #438EB9 solid;
+}
+#myNav .bs-docs-sidenav li.active ul{
+	display: block;
+}
+
+#myNav .nav > li > a{
+	padding: 5px 15px;
+}
+#myNav.affix{
+	top:0;
+	position: fixed !important;
+}
+
+#myNav > a{
+	display: block;
+	padding: 5px 15px;
+	color: #999;
+}
+#myNav > a:hover{
+	background-color: #eee;
+	text-decoration: none;
+}
