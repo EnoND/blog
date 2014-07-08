@@ -52,10 +52,11 @@ title: EnoND Blog
 　　	<div class="row item">
 			<div class="col-sm-3 time">
 				<p>
-					<span class="time-txt">{{ post.date | date_to_string }}</span>
+					<span class="time-txt">{{ site.time | date_to_xmlschema }}</span>
 				</p>
 			</div>
 			<div class="col-sm-9">
+				<a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-info" style="float:right;margin: 40px 0 20px;padding-bottom: 9px;">查看详情</a>
 				{{ post.excerpt}}
 			</div>
 		</div>
