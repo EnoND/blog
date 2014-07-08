@@ -58,13 +58,13 @@ title: EnoND Blog
 			<div class="col-sm-9">
 				<div class="page-header">
 					<h1>
-						{{ post.title }}
+						<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 						<!-- <small>Subtext for header</small> -->
 					</h1>
 				</div>
 				<p>
 					我是简介11111
-					{{ post.doc}}
+					{{ post.excerpt}}
 				</p>
 			</div>
 		</div>
