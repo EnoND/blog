@@ -37,3 +37,8 @@
 body{
 	position: relative;
 }
+
+/*把百度统计图标隐藏*/
+body>a{
+	display: none;
+}
